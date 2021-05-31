@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="tabs">
+            <div class="tabs__nav tabs-nav">
+                <div class="tabs-nav__item is-active" data-tab-name="tab-1">Login</div>
+                <div class="tabs-nav__item" data-tab-name="tab-2">Register</div>
+            </div>
+            <div class="tabs__content">
+                <div class="tab is-active tab-1"> 
+                    <form action="" class="login-form login-form_log" method="POST">
+
+                        <div class="login-form__title">Войти</div>
+        
+                        <label class="login-form__label">
+                            Email:
+                            <input type="email" id="email1" class="login-form__input" name="email1" placeholder="Введите почту" autofocus>
+                        </label>
+                            
+                        <label class="login-form__label login-form__label_pass">
+                            Пароль:
+                            <input type="password" id="pass1" class="login-form__input login-form__input_pass" name="pass1" placeholder="Введите пароль">
+                            <div class="login-form__label_pass__btn">  <img src="img/icon1.svg" alt="imgEye"> </div>
+                        </label>  
+            
+                        <button type="submit" id="btn1" class="login-form__btn">Войти</button>
+                    </form>
+                     
+                </div>
+                <div class="tab tab-2">
+
+                    <form action="" class="login-form login-form_reg" method="POST">
+
+                        <div class="login-form__title">Зарегистрироваться</div>
+        
+                        <label class="login-form__label">
+                            Введите логин:
+                            <input type="text"  id="login2" class="login-form__input" name="login2" placeholder="Введите логин" autofocus>
+                        </label>
+                
+                        <label class="login-form__label login-form__label_email">
+                            Введите свою почту:
+                            <input type="email"  id="email2" class="login-form__input" name="email2" pattern="[^ @]*@[^ @]*" placeholder="Введите почту" >
+                        </label>
+                
+                        <label class="login-form__label login-form__label_pass">
+                            Введите пароль:
+                            <input type="password" id="pass2_1" class="login-form__input login-form__input_pass" name="pass2_1" placeholder="Введите пароль">
+                        </label> 
+                
+                        <label class="login-form__label login-form__label_pass">
+                            Повторите пароль:
+                            <input type="password" id="pass2_2" class="login-form__input login-form__input_pass" name="pass2_2" placeholder="Введите пароль">
+                        </label>  
+                
+                        <button type="submit" id="btn2" class="login-form__btn">Зарегистрироваться</button>
+        
+                     </div> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>

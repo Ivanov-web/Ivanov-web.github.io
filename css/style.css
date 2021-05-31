@@ -1,0 +1,119 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background:#c7c7c7;
+    flex-shrink:1; 
+    
+}
+
+/* tabs */
+
+.tabs-nav {
+	display: flex;
+	justify-content: space-between;
+}
+.tabs-nav__item {
+	border-bottom: 1px solid transparent;
+	cursor: pointer;
+	flex: 1;
+	/* padding: 20px; */
+
+    
+    height: 40px;
+    background:#e6e4e4;
+
+    text-transform: uppercase;
+    font-size: 21px;
+    text-align: center;
+    color: black;
+    line-height: 40px;
+    
+}
+.tabs-nav__item:hover{
+    font-weight: 600;
+}
+
+.tabs-nav__item.is-active {
+	border-color: green;
+}
+
+.tab {
+	background-color: #e6e4e4;
+	display: none;
+	/* padding: 20px; */
+    height: 360px;
+    
+}
+.tab.is-active { display: block; }
+
+/* формы */
+.login-form{
+    width: 400px; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form__title{
+    text-transform: uppercase;
+    font-size: 21px;
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+}
+.login-form__label{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: black;   
+}
+.login-form__input{
+    height: 28px;
+    background: white;
+    border: none;
+    margin: 10px 0;
+    border-left: 2px solid #c7c7c7;;
+}
+.login-form__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28px;
+    background:#c7c7c7;
+    border: none;
+    cursor: pointer;
+}
+.login-form__btn:hover{
+    font-weight: 600;
+}
+.login-form__label_pass{
+    position: relative;
+}
+.login-form__label_pass__btn{
+    position: absolute;
+    top:26px;
+    right: 10px;
+    cursor: pointer;
+}
+.login-form__label_pass__btn::after{
+    position: absolute;
+    content:'';
+    top:10px;
+    right: -1px;
+    width:26px;
+    height: 3px;
+    background:black;
+    transform: rotate(45deg);
+    transition: all .5s ease;
+    opacity: 1;
+}
+.login-form__label_pass__btn.active::after{
+    opacity: 0;
+}
